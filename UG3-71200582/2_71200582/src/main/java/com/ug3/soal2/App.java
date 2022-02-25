@@ -22,11 +22,7 @@ public class App
                     e.printStackTrace();
                 }
             }
-            try {
-                TimeUnit.SECONDS.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             System.out.print("\nAkan berganti ke lampu kuning\n\n");
             System.out.print("Lampu kuning menyala selama\n");
             for (int i = kuning; i != 0; i--) {
@@ -36,11 +32,6 @@ public class App
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-            }
-            try {
-                TimeUnit.SECONDS.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
             }
             System.out.print("\n\nAkan berganti ke lampu hijau\n\n");
             System.out.print("Lampu hijau menyala selama\n");
@@ -52,11 +43,7 @@ public class App
                     e.printStackTrace();
                 }
             }
-            try {
-                TimeUnit.SECONDS.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             System.out.print("\n\nAkan berganti ke lampu kuning\n");
             System.out.print("Lampu kuning menyala selama\n");
             for (int i = kuning; i != 0; i--) {
@@ -67,11 +54,7 @@ public class App
                     e.printStackTrace();
                 }
             }
-            try {
-                TimeUnit.SECONDS.sleep(5);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
+
             System.out.print("\n\nAkan berganti ke lampu merah\n\n");
 
 

@@ -13,7 +13,7 @@ public class UG3soal1 {
         System.out.println("====================absensi karyawan====================");
         System.out.println("Absen disini");
 
-        System.out.println("Nama karyawan: ");
+        System.out.print("Nama karyawan: ");
         String name=input.nextLine();
 
         LocalDate Tanggal = LocalDate.now();
