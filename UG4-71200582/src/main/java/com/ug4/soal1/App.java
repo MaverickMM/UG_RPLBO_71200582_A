@@ -133,12 +133,12 @@ public class App {
                 tampilkanInformasi(pohon);
                 break;
             case 7:
-                int JumlahBuah = pohon.getBuah().getJumlah();
-                if (JumlahBuah != 0) {
-                    System.out.println("Kamu sudah memanen sebanyak " + JumlahBuah + " buah " + pohon.getBuah().getName() + " saat ini");
 
-                }else {
-                    System.out.println("Tidak ada yang dipanen!");
+                try {
+                    int JumlahBuah = pohon.getBuah().getJumlah();
+                    System.out.println("Kamu sudah memanen sebanyak " + JumlahBuah + " buah " + pohon.getBuah().getName() + " saat ini");
+                } catch (Exception ex) {
+                    System.out.println("Anda belum memasukkan Musim");
                 }
                 tampilkanInformasi(pohon);
                 break;
