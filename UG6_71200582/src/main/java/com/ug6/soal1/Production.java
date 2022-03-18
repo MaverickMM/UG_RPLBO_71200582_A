@@ -22,8 +22,9 @@ public class Production {
         int index = 0;
         boolean status = false;
 
-        for(Iterator<String> var4 = Codes.ANDROIDCODES.iterator(); var4.hasNext(); ++index) {
-            String androidLevel = var4.next();
+        Iterator<String> variabel1;
+        for(variabel1 = Codes.ANDROIDCODES.iterator(); variabel1.hasNext(); ++index) {
+            String androidLevel = variabel1.next();
             status = !androidCode.equalsIgnoreCase(androidLevel) || index >= 3;
         }
 
