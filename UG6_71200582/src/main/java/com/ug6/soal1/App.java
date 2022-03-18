@@ -85,9 +85,9 @@ public class App {
         System.out.println("\n\n");
         System.out.println("Begin to Start");
         System.out.print("How much production capacity that can produce: ");
-        int productionCapacity = Integer.parseInt(scanner.nextLine());
+        int product_Capacity = Integer.parseInt(scanner.nextLine());
         ArrayList<LocalDate> productionDate = new ArrayList<>();
-        production = new Production(productionCapacity, productionDate);
+        production = new Production(product_Capacity, productionDate);
         System.out.println("Check Specification Requirement");
         checkSpecificationRequirement();
     }

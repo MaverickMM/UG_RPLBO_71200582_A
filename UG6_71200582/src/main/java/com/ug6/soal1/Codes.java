@@ -14,18 +14,18 @@ public class Codes {
         int min = 1;
         int max = 20;
 
-        double random = Math.random() * (double)(max - min + 1) + (double)min;
+        double random_number =(double)(max - min + 1) * Math.random() + (double)min;
 
-        int randomCode = (int)random;
+        int random_number1 = (int)random_number;
 
-        return companyCode + "X" + randomCode;
+        return companyCode + "X" + random_number1;
     }
 
     public static String generatePhoneCode(String companyCode, String androidCode) {
         int min = 1;
         int max = 20;
-        double random = Math.random() * (double)(max - min + 1) + (double)min;
-        int randomCode = (int)random;
-        return companyCode + androidCode.charAt(0) + androidCode.charAt(androidCode.length() - 1) + randomCode;
+        double random_number = (double)(max - min + 1) * Math.random() + (double)min;
+        int random_number1 = (int)random_number;
+        return companyCode + androidCode.charAt(0) + androidCode.charAt(androidCode.length() - 1) + random_number1;
     }
 }

@@ -35,9 +35,9 @@ public class Production {
         boolean status = false;
         System.out.println("Starting with status " + false);
 
-        Iterator<String> var6;
-        for(var6 = Codes.ANDROIDCODES.iterator(); var6.hasNext(); ++index) {
-            String androidLevel = var6.next();
+        Iterator<String> variabel;
+        for(variabel = Codes.ANDROIDCODES.iterator(); variabel.hasNext(); ++index) {
+            String androidLevel = variabel.next();
             if (index <= 4 && androidLevel.equalsIgnoreCase(androidCode)) {
                 if (ramCapacity <= 8 && ramCapacity >= 1 && romCapacity <= 128 && romCapacity >= 32) {
                     status = true;
