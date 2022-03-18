@@ -104,16 +104,14 @@ public class Production {
         this.productionCapacity = productionCapacity;
     }
 
-    public ArrayList<LocalDate> getProductionDate() {
-        return this.productionDate;
-    }
+
 
     protected void setProductionDate(ArrayList<LocalDate> productionDate) {
         this.productionDate = productionDate;
     }
 
-    public double getCostCalculation() {
-        return this.costCalculation;
+    public ArrayList<LocalDate> getProductionDate() {
+        return this.productionDate;
     }
 
     public void setCostCalculation(double costCalculation) {
@@ -122,4 +120,12 @@ public class Production {
 
     public void setProductionDueDays() {
     }
+
+    public double getCostCalculation() {
+        return this.costCalculation;
+    }
+
+
+
+
 }

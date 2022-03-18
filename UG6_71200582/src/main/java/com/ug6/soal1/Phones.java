@@ -29,10 +29,12 @@ public class Phones {
     }
 
     public String getPhoneName() {
+
         return this.phoneName;
     }
 
     public void setPhoneName(String phoneName) {
+
         this.phoneName = phoneName;
     }
 
@@ -40,31 +42,49 @@ public class Phones {
     }
 
     public String getAndroidCode() {
+
         return this.androidCode;
     }
 
     public void setAndroidCode(String androidCode) {
+
         this.androidCode = androidCode;
     }
 
     public int getRamCapacity() {
+
         return this.ramCapacity;
     }
 
     public void setRamCapacity(int ramCapacity) {
+
         this.ramCapacity = ramCapacity;
     }
 
     public int getRomCapacity() {
         return this.romCapacity;
     }
+    public void setScreenSize(float screenSize) {
+
+        this.screenSize = screenSize;
+    }
+
+    public String getPhoneCode() {
+
+        return this.phoneCode;
+    }
 
     public void setRomCapacity(int romCapacity) {
+
         this.romCapacity = romCapacity;
     }
 
     public int getCameraResolution() {
         return this.cameraResolution;
+    }
+
+    public void setPhoneCode(String phoneCode) {
+        this.phoneCode = phoneCode;
     }
 
     public void setCameraResolution(int cameraResolution) {
@@ -75,15 +95,5 @@ public class Phones {
         return this.screenSize;
     }
 
-    public void setScreenSize(float screenSize) {
-        this.screenSize = screenSize;
-    }
 
-    public String getPhoneCode() {
-        return this.phoneCode;
-    }
-
-    public void setPhoneCode(String phoneCode) {
-        this.phoneCode = phoneCode;
-    }
 }
