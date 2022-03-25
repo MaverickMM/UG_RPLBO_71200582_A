@@ -11,11 +11,12 @@ public class Karakter {
       this.player = new Player(player.getUsername(), player.getPassword());
    }
 
-   public void buyWeapon(int weapon) {
-      if (weapon > 0 && weapon < 5) {
-         this.weapon = weapon;
+   public void buyWeapon(int senjata) {
+
+      if (senjata < 5 && senjata > 0) {
+         this.weapon = senjata;
          int price;
-         switch(weapon) {
+         switch(senjata) {
          case 1:
             price = 500;
             break;
