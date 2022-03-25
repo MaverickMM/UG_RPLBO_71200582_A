@@ -14,7 +14,7 @@ public class Karakter {
    public void buyWeapon(int weapon) {
       if (weapon > 0 && weapon < 5) {
          this.weapon = weapon;
-         short price;
+         int price;
          switch(weapon) {
          case 1:
             price = 500;
@@ -48,7 +48,7 @@ public class Karakter {
    }
 
    public void normalAttack(Karakter karakter) {
-      byte damage;
+      int damage;
       if (this.weapon == 1) {
          damage = 20;
       } else if (this.weapon == 2) {

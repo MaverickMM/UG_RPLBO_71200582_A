@@ -8,7 +8,7 @@ public class Penyihir extends Karakter {
    }
 
    public void buyWeapon(int weapon) {
-      System.out.println("Daftar senjata:\n1. Pisau\n2. Tongkat\n3. Tongkat Sihir\n4. Katana");
+      System.out.println("Daftar senjata:\n1. Pisau\n2. Tongkat Sihir\n3. Tongkat\n4. Katana");
       System.out.println("Pilihan senjata: " + weapon);
       if (weapon != 2 && weapon != 3) {
          System.out.println("Sebagai penyihir kamu hanya boleh membeli tongkat/tongkat sihir!");

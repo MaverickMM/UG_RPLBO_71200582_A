@@ -8,7 +8,7 @@ public class Ninja extends Karakter {
    }
 
    public void buyWeapon(int weapon) {
-      System.out.println("Daftar senjata:\n1. Pisau\n2. Tongkat\n3. Tongkat Sihir\n4. Katana");
+      System.out.println("Daftar senjata:\n1. Pisau\n2. Tongkat Sihir\n3. Tongkat\n4. Katana");
       System.out.println("Pilihan senjata: " + weapon);
       if (weapon != 1 && weapon != 4) {
          System.out.println("Sebagai ninja kamu hanya boleh membeli pisau/katana!");
