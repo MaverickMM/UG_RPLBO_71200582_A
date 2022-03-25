@@ -54,7 +54,7 @@ public class Ninja extends Karakter {
              }
 
 
-             damage = (int)((double)damage * 1.5D);
+             damage = (int)(1.5D * (double)damage);
              karakter.receiveDamage(damage);
             if (karakter.getHP() < 50) {
                this.isAbilityReady = true;
