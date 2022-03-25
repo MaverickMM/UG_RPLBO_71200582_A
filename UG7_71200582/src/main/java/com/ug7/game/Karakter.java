@@ -49,20 +49,15 @@ public class Karakter {
 
    public void normalAttack(Karakter karakter) {
       byte damage;
-      switch(this.weapon) {
-      case 1:
+      if (this.weapon == 1) {
          damage = 20;
-         break;
-      case 2:
+      } else if (this.weapon == 2) {
          damage = 60;
-         break;
-      case 3:
+      } else if (this.weapon == 3) {
          damage = 25;
-         break;
-      case 4:
+      } else if (this.weapon == 4) {
          damage = 50;
-         break;
-      default:
+      } else {
          damage = 0;
       }
 
@@ -84,28 +79,25 @@ public class Karakter {
 
       System.out.println("HP: " + this.getHP() + " " + isDie);
       String weapon;
-      switch(this.weapon) {
-      case 1:
+      if (this.weapon == 1) {
          weapon = "Pisau";
-         break;
-      case 2:
+      } else if (this.weapon == 2) {
          weapon = "Tongkat Sihir";
-         break;
-      case 3:
+      } else if (this.weapon == 3) {
          weapon = "Tongkat";
-         break;
-      case 4:
+      } else if (this.weapon == 4) {
          weapon = "Katana";
-         break;
-      default:
-         weapon = "Knife";
+      } else {
+         weapon = "tangan kosong";
       }
 
       System.out.println("Weapon: " + weapon);
       String movement;
       if (this.isWalk) {
+
          movement = "Walking";
       } else {
+
          movement = "Running";
       }
 
@@ -129,8 +121,11 @@ public class Karakter {
       if (this.getHP() > 100) {
          this.HP = 100;
       }
+      if (this.getHP() <= 0) {
+         System.out.print("Aku kembali Hidup - ");
+         System.out.println("HP sekarang: " + this.getHP());
+      }
 
-      System.out.println("HP sekarang: " + this.getHP());
    }
    public boolean isWalk() {
       return this.isWalk;
