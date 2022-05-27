@@ -40,8 +40,8 @@ import java.util.Map.Entry;
 
         public void printPortfolio() {
             String name = investor.getNama();
-            int counter = 1;
-            long totalsemua = 0;
+            int count = 1;
+            long totalall = 0;
             System.out.println("==========Portofolio Client==========");
             System.out.println("Client: "+ name);
             System.out.println("No.  Kode Saham \t Jumlah Lot \t Harga \t   Sub Total ");
@@ -52,9 +52,9 @@ import java.util.Map.Entry;
                 totalsemua += total;
                 System.out.println(counter + ".  " + i.getKey().getKode() + "\t         "+i.getValue() +"x"
                         + "\t             " +i.getKey().getHarga() + "\t    " + total);
-                counter ++;
+                count ++;
             }
-            System.out.println("Total Investasi: Rp"+totalsemua);
+            System.out.println("Total Investasi: Rp"+totalall);
             System.out.println("");
         }
 
