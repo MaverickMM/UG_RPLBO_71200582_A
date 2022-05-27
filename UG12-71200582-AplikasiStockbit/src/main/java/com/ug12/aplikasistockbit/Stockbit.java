@@ -49,7 +49,7 @@ import java.util.Map.Entry;
             for (Entry<Saham, Integer> i : investor.getPortofolio().entrySet()){
 
                 long total = i.getValue() * 100 * i.getKey().getHarga();
-                totalsemua += total;
+                totalall += total;
                 System.out.println(counter + ".  " + i.getKey().getKode() + "\t         "+i.getValue() +"x"
                         + "\t             " +i.getKey().getHarga() + "\t    " + total);
                 count ++;
