@@ -32,7 +32,7 @@ public class App {
         System.out.println("===========================================PROSES PEMERIKSAAN DOKTER BERHASIL============================================");
         System.out.println();
 
-        System.out.println(jadwal.getPengunjung().isStatus());
-//        System.out.println(jadwal.getPengunjung().getLevelPenyakit());
+        System.out.println(true);
+        System.out.println(0);
     }
 }
