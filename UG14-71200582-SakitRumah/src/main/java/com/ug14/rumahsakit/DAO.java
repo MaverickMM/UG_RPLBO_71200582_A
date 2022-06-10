@@ -32,55 +32,55 @@ public class DAO {
         return conn;
         }
 
-//    public int getDokterByID(){
-//        PreparedStatement statement = conn.prepareStatement(sql,
-//                Statement.RETURN_GENERATED_KEYS);
-//
-//        statement.execute();
-//
-//        PreparedStatement ps = connection
-//                .prepareStatement("select your_table_id_sequence.currval from dual");
-//
-//        ResultSet rs = ps.executeQuery();
-//        if (rs.next()) {
-//            generatedKey = (int) rs.getLong(1);
-//        }
-//
-//        System.out.println("Inserted record's ID: " + generatedKey);
-//
-//    }
-//    public int getSusterByID(){
-//        PreparedStatement statement = conn.prepareStatement(sql,
-//                Statement.RETURN_GENERATED_KEYS);
-//
-//        statement.execute();
-//
-//        PreparedStatement ps = connection
-//                .prepareStatement("select your_table_id_sequence.currval from dual");
-//
-//        ResultSet rs = ps.executeQuery();
-//        if (rs.next()) {
-//            generatedKey = (int) rs.getLong(1);
-//        }
-//
-//        System.out.println("Inserted record's ID: " + generatedKey);
-//    }
-//    public int getPelayananByID(){
-//        PreparedStatement statement = conn.prepareStatement(sql,
-//                Statement.RETURN_GENERATED_KEYS);
-//
-//        statement.execute();
-//
-//        PreparedStatement ps = connection
-//                .prepareStatement("select your_table_id_sequence.currval from dual");
-//
-//        ResultSet rs = ps.executeQuery();
-//        if (rs.next()) {
-//            generatedKey = (int) rs.getLong(1);
-//        }
-//
-//        System.out.println("Inserted record's ID: " + generatedKey);
-//    }
+   public int getDokterByID(){
+       PreparedStatement statement = conn.prepareStatement(sql,
+               Statement.RETURN_GENERATED_KEYS);
+
+       statement.execute();
+
+       PreparedStatement ps = connection
+               .prepareStatement("select your_table_id_sequence.currval from dual");
+
+       ResultSet rs = ps.executeQuery();
+       if (rs.next()) {
+           generatedKey = (int) rs.getLong(1);
+       }
+
+       System.out.println("Inserted record's ID: " + generatedKey);
+
+   }
+   public int getSusterByID(){
+       PreparedStatement statement = conn.prepareStatement(sql,
+               Statement.RETURN_GENERATED_KEYS);
+
+       statement.execute();
+
+       PreparedStatement ps = connection
+               .prepareStatement("select your_table_id_sequence.currval from dual");
+
+       ResultSet rs = ps.executeQuery();
+       if (rs.next()) {
+           generatedKey = (int) rs.getLong(1);
+       }
+
+       System.out.println("Inserted record's ID: " + generatedKey);
+   }
+   public int getPelayananByID(){
+       PreparedStatement statement = conn.prepareStatement(sql,
+               Statement.RETURN_GENERATED_KEYS);
+
+       statement.execute();
+
+       PreparedStatement ps = connection
+               .prepareStatement("select your_table_id_sequence.currval from dual");
+
+       ResultSet rs = ps.executeQuery();
+       if (rs.next()) {
+           generatedKey = (int) rs.getLong(1);
+       }
+
+       System.out.println("Inserted record's ID: " + generatedKey);
+   }
     public int inputPasien(Pasien pasien) {
         BufferedReader inputUser = new BufferedReader(new InputStreamReader(System.in));
 
