@@ -160,7 +160,8 @@ public class DAO {
         }
     }
     public void getPasienSembuh(){
-
+        String query = "SELECT * FROM Pasien";
+        
     }
 
 }
